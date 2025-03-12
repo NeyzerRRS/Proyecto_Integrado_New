@@ -1,0 +1,801 @@
+/*BOTON LOGOUT*/
+/* Botón principal */
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: white;
+}
+
+/* Signo (ícono) */
+.sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: black;
+}
+
+/* Texto */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+
+/* Efecto hover: expansión del botón */
+.Btn:hover {
+  background-color: black;
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+}
+
+/* Efecto hover: movimiento del ícono hacia la izquierda */
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-right: 20px; /* Movimiento hacia la izquierda */
+}
+
+/* Efecto hover: cambio de color del ícono */
+.Btn:hover .sign svg path {
+  fill: white;
+}
+
+/* Efecto hover: texto visible y alineado */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-left: 10px; /* Texto alineado hacia la izquierda */
+}
+
+/* Efecto al hacer clic */
+.Btn:active {
+  transform: translate(2px, 2px);
+}
+
+/*_______________________________*/
+/*REPORTES VENTAS*/
+.Tt-Rv{
+    background-color: lightgray;
+    border-radius: 15px;
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 15px;
+    box-shadow: 0px 0px 5px black;
+}
+.Tb-Rv {
+    background-color: transparent;
+    border-spacing: 10px; 
+    margin:auto;
+    font-family: Arial;
+    color: black;
+    border:none;
+    }
+.Fil-Rv{
+    width: 800px;
+    height:50px;
+    border-radius: 10px;
+    padding-left: 10px;
+    align-content: center;
+    background-color: #B8D6F1;
+    font-family: Arial;
+    color: black;
+}
+.btn-Rv{
+    margin-left: 15px;
+    cursor: pointer;
+    background: rgb(0,140,255);
+    box-shadow: 0 0 20px rgb(0,140,255);
+    border: none;
+    padding: 10px 10px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+} 
+.btn-Rv:hover{
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
+.cont-Rv{
+    font-size: 16px;
+text-align: center;
+}
+/*________________________________________*/
+
+
+h1{
+    text-align: center;
+    color: #0B2972;
+    font-size: 400%;
+    overflow:hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 110px;
+    margin-top: 0px;
+    padding-top: 37px;
+    margin-right: 20%;
+    margin-left: 390px;
+
+}
+
+header{
+    background-color: #B8D6F1;
+    border-radius: 20px;
+
+}
+img{
+    width:20% ;
+    height: 30%;
+    float: left;
+    margin-top: 10px;
+
+}
+body{
+    font-family: Arial;
+}
+
+.AgregarP{
+    background-color: #BECFFA;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    border:2px solid black;
+    color: black;
+    font-weight: 900;
+
+}
+.AgregarP:hover{
+    color: #1460F2;
+    cursor: pointer;
+}
+
+/*Registrar_productos*/
+.registrarP form{
+    background-color: red;
+}
+.buscador2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #1D5AA2; 
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.buscador2 i {
+    position: absolute;
+    left: 10px;
+    color: white;
+}
+
+.buscador2 input.search_bar {
+    padding: 10px 10px 10px 30px; 
+    border: none;
+    outline: none;
+    background-color: #1D5AA2;
+    color: white;
+    width: 300px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.buscador2 input::placeholder {
+    color:white;
+    background-color: #1D5AA2;
+}
+.Cuadro1{
+    background-color: #e1f1ff ;
+    width:250px ;
+    height: 250px;
+    border-radius: 10px;
+    color: #0B2972;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    
+/*Animación de cursor*/
+   
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Contenedor :hover{
+    border-radius: 10px;
+    transform: translateY(-5px); /* Levanta el cuadro */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+.Cuadro1 img{
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+    align-items: center;
+    pointer-events: none;
+    margin-right: 50px;
+}
+.Contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: repeat(3,auto);
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    gap: 50px;
+}
+.Cuadro1 p {
+    margin-top: 0%;
+    margin-left: 15px;
+    margin-right: 15px;
+    pointer-events: none;
+}
+.MainContent{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px
+}
+.Cuadro1:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+a {
+    text-decoration: none;
+}
+.User img.User_icon, form.User_icon{
+    width: 10%;
+    height: 10%;
+    border-radius:60%;
+
+    position: relative;
+    display: flex;
+    align-items:center;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: transparent; 
+
+    float: right;
+    margin-top: auto;
+    margin-right: auto;
+}
+.User_log{
+  
+    width: 10%;
+    height: 10%;
+    border-radius:60%;
+
+    position: relative;
+    display: flex;
+    align-items:center;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: transparent; 
+
+    float: right;
+    margin-top: 3.5%;
+    margin-right: auto;
+}
+
+
+
+/*--------------------Inicio de Submenu*--------------------/
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: #1D5AA2;
+  border-radius: 15px;
+  margin-top: -30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #BECFFA;
+  border-radius: 15px;
+  color: #1460F2;
+  
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #0B2972;
+  width: 44%;
+  z-index: 1;
+  border-radius: 15px;
+
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #BECFFA;
+  color:#1460F2;
+
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+  margin-left: 7px;
+}
+/*Este icono 1 son los img de los iconos*/
+.icono1 {
+        background: transparent;
+        margin: auto;
+        border-style: none;
+        padding: 0%;
+        width: 50px; /* Ajusta el tamaño del icono según sea necesario */
+        height: 50px; /* Ajusta el tamaño del icono según sea necesario */
+        margin-left: 5px;
+        float: center;
+
+    }
+.icono1:hover{
+        background-color: lightgray;
+        border-radius: 15px;
+        height:55px ;
+
+
+    }
+    /*Este icono 1 son los td de los iconos*/
+.icono {
+        background: none;
+        margin: auto;
+        border-style: none;
+        padding: 0%;
+        width: 0px;
+        height: 0px;
+        margin-left: 100px;
+        float: center;
+
+    }
+
+table {
+        border-spacing: 10px; 
+        margin-left: 30%;
+        font-family: Arial;
+        color: black;
+
+    }
+th {
+        background-color: #81A2F7;
+        border-radius: 15px;
+        width: 170px;
+        padding: 5px;
+        height: 50px;
+        text-align: center;
+         border: 2px solid black;
+         font-size: 20px; 
+    }
+td {
+       background-color: lavender;
+        border-radius: 15px;
+        height: 50px;
+        text-align: center;
+        padding: 5px;
+        border: 2px solid black; 
+        align-items: center;
+        justify-content: center;
+    }
+    /*Botón Volver al Inicio*/
+.volver:hover{
+        background-color: #BECFFA;
+        color: #1460F2;
+        border-radius: 15px;
+    }
+    /*Clase del p de No encontrado Productos*/
+.No_Encontrado{
+    padding: 20px;
+    background-color: lightgray; 
+    color: black;  
+    margin-left: 30%;
+    text-align: center;
+    margin-right: 30%;  
+    border-top: 6px solid red;   
+    border-radius: 3px;       
+}
+/*Formulario de Registar Ventas - Vales*/
+
+.PCI_Venta{
+    width: 200px;
+    margin-left: 0px;
+ }
+ /*Fondo del Buscador de Agregar*/
+ .Fondo_Agregar{
+    background-color: #BECFFA;
+    height: 60px;
+    border-radius: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+ }
+
+ .linea{
+    margin-left: 353px;
+    color: #81A2F7;
+ }
+
+ /*icono de Eliminar*/
+
+    /*Este icono 1 son los td de los iconos*/
+ 
+ /*Botón de Pagar*/
+ .Pagar{
+    background-color: #5FD461;
+    width: 150px;
+    height: 75px;
+    border-style: none;
+    cursor: pointer;
+    border-radius:15px ;
+    margin-left: 75%;
+    font-size: 15px;
+    font-weight: 900;
+
+ }
+ .input_V{
+    border-radius: 15px;
+    border-style: none;
+    height: 25px;
+    color: black;
+    text-align: center;
+ }
+ .Pagar:hover{
+    background-color: #39A23B;
+ }
+ /*Importe y Total*/
+
+ .Importe{
+    background-color: lavender;
+    border-radius: 15px;
+    height: 50px;
+    width: 170px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35%;
+ }
+
+
+/*Buscador de Ventas*/
+.vent{
+    margin-left: 0;
+    margin-right: 70%;
+}
+
+
+/*FORMULARIOS DE TODO EL SISTEMA*/
+
+.Titulo_Form{
+    color: #0B2972;
+    text-align: center;
+    margin: 0%;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight:  100;
+    font-size: 22px;
+    padding: 10px;
+}
+.Subtitulo_Form{
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    border: none;
+    font-size: 20px;
+}
+.formLabel{
+    
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: none;
+    font-size: 20px;
+    border-left: 3px solid #0B2972;
+    box-shadow: 0px 0px 15px #0001;
+    border-radius: 2px;
+    background-color: transparent;
+    color: #0B2972;
+    padding:3%;
+
+    
+}
+.registrarP{
+    
+    background-color: transparent;
+    padding: 20px 0;
+    max-width: 37%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 0px 0px 35px #0006;
+    margin-top:  50px;
+    border-radius: 15px;
+    padding-left: 10px;
+
+}
+.btn-form{
+    margin-left: 15px;
+    cursor: pointer;
+    background: #0B2972;
+    box-shadow: 0 0 20px rgb(0,140,255);
+    border: none;
+    padding: 10px 10px;
+    font-size: 14px;
+    width: 93%;
+    height: 40px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+} 
+.btn-form:hover{
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
+/*-------------------------------------*/
+-----------------------------------
+/* From Uiverse.io by vinodjangid07 */ 
+.faq-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+  position: relative;
+}
+.faq-button svg {
+  height: 1.5em;
+  fill: white;
+}
+.faq-button:hover svg {
+  animation: jello-vertical 0.7s both;
+}
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tooltip {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ff2525;
+  background-size: 1000%;
+  background-position: center;
+  transform: rotate(45deg);
+  bottom: -15%;
+  transition-duration: 0.3s;
+}
+
+.faq-button:hover .tooltip {
+  top: -40px;
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+/*---------Boton ayuda--------------*/
+.faq-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffe53b;
+  background-image: linear-gradient(50deg, black 0%, white 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+  
+}
+
+.faq-button svg {
+  height: 1.8em; /*cambiar tamaño del signo*/
+  fill: red; /*cambiar color del signoo*/
+}
+
+.faq-button:hover svg {
+  animation: jello-vertical 0.6s both;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tooltip {
+  position: absolute;
+  top: -35px; /* Ajusta la distancia entre el botón y el tooltip */
+  opacity: 0;
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, red 0%, blue 74%); /*cambiar color de "ayuda"*/
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ff2525;
+  background-position: center;
+  transform: rotate(45deg);
+  bottom: -45%; /*cambiar posicion del diamante*/
+  transition-duration: 0.3s;
+}
+
+.faq-button:hover .tooltip {
+  top: -40px; /* Ajusta la posición del tooltip cuando se hace hover */
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+.User_help{
+  
+    width: 7%;
+
+    position: relative;
+    display: flex;
+    align-items:center;
+    border-radius: 10px;
+    background-color: transparent; 
+
+    float: right;
+    margin-top: 3.7%;
+    margin-right: auto;
+}

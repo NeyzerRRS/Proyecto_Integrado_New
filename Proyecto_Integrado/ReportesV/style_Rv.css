@@ -1,0 +1,58 @@
+/*REPORTES VENTAS*/
+.Tt-Rv{
+    background-color: lightgray;
+    border-radius: 15px;
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 15px;
+    box-shadow: 0px 0px 5px black;
+}
+.Tb-Rv {
+    background-color: transparent;
+    border-spacing: 10px; 
+    margin:auto;
+    font-family: Arial;
+    color: black;
+    border:none;
+    }
+.Fil-Rv{
+    width: 800px;
+    height:50px;
+    border-radius: 10px;
+    padding-left: 10px;
+    align-content: center;
+    background-color: #B8D6F1;
+    font-family: Arial;
+    color: black;
+}
+.btn-Rv{
+    margin-left: 15px;
+    cursor: pointer;
+    background: rgb(0,140,255);
+    box-shadow: 0 0 20px rgb(0,140,255);
+    border: none;
+    padding: 10px 10px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+} 
+.btn-Rv:hover{
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
+.cont-Rv{
+    font-size: 16px;
+text-align: center;
+}
+/*________________________________________*/
